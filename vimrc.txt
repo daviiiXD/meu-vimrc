@@ -1,0 +1,42 @@
+call plug#begin()
+  Plug 'vim-airline/vim-airline'
+  Plug 'sainnhe/everforest'
+  Plug 'pineapplegiant/spaceduck'
+  Plug 'vim-ruby/vim-ruby'
+  Plug 'pangloss/vim-javascript'
+  Plug 'arp242/startscreen.vim'
+call plug#end()
+
+set nu!
+set wildmenu
+set ruler
+
+"set ttyfast
+set showcmd
+set showmode
+set hlsearch
+set sm " mostra o par da chave
+set autoindent " Indentação no nivel da linha acima
+set tabstop=4 " Regula o tamanho do tab para 4
+set ai " melhor indentação
+set title " mostra o nome do arquivo
+set undolevels=1000 " muda o número de undos para 1000
+set noerrorbells " desativa os sons de erro
+set autowrite " auto save
+set nowrap " desativa a quebra de linha automatica
+set tabstop=4  " muda o tamanho do tab
+
+" ====== TEMA ======
+
+set background=dark
+syntax on
+colorscheme spaceduck       
+ 
+
+" ====== MAPEAMENTOS ======
+
+map :e :Explore
+map <C-w> :w<CR>
+map <C-q> :q<CR>
+map <C-z> :undo<CR>
+map <C-y> :redo<CR>
